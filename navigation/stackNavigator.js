@@ -27,13 +27,7 @@ const MainStackNavigator = () => {
     );
 };
 
-const AboutScreenNavigator = () => {
-    return(
-        <Stack.Navigator screenOption={screenOptionStyle}>
-            <Stack.Screen name="About Screen" component={aboutScreen}/>
-        </Stack.Navigator>
-    );
-};
+
 
 const ContactStackNavigator = () => {
     return (
@@ -43,4 +37,4 @@ const ContactStackNavigator = () => {
     );
 };
 
-export { MainStackNavigator, AboutScreenNavigator,ContactStackNavigator };
+export { MainStackNavigator, ContactStackNavigator };
