@@ -7,7 +7,7 @@ To set up a react-native project, you can make use of the React Native CLI or th
 - I would be making use of the Expo CLI to set up a react-native project. To do so, run the following command on your terminal.
 
 <p align="center">
-  <img src="https://ibb.co/wybW6YP" width="350" title="hover text">
+  <img src="https://ibb.co/wybW6YP" width="350" alt="React Native">
 </p>
 
       npm install -g expo-cli
