@@ -1,23 +1,21 @@
+// ./navigation/DrawerNavigator.js
 
+import React from "react";
 
-// ./navigator/DrawerNavigator.js
+import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-
-
-import { ContactStackNavigator } from './stackNavigator';
-import TabNavigator from './TabNavigator';
+import { ContactStackNavigator } from "./StackNavigator";
+import TabNavigator from "./TabNavigator";
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
-    return (
-        <Drawer.Navigator>
-            <Drawer.Screen name="homeScreen" component={TabNavigator}/>
-            <Drawer.Screen name="contactScreen" component={ContactStackNavigator}/>
-        </Drawer.Navigator>
-    );
+  return (
+    <Drawer.Navigator>
+      <Drawer.Screen name="homeScreen" component={TabNavigator} />
+      <Drawer.Screen name="contactScrreen" component={ContactStackNavigator} />
+    </Drawer.Navigator>
+  );
 };
 
 export default DrawerNavigator;

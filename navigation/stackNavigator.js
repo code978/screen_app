@@ -30,7 +30,7 @@ const MainStackNavigator = () => {
 const ContactStackNavigator = () =>{
     return(
         <Stack.Navigator screenOption={screenOptionStyle}>
-            <Stack.screen name="contactScreen" component={contactScreen}/>
+            <Stack.Screen name="contactScreen" component={contactScreen}/>
         </Stack.Navigator>
     );
 };
