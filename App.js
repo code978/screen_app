@@ -1,14 +1,16 @@
 
-
 // App.js
 
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import {MainStackNavigator} from './navigation/stackNavigator';
+import DrawerNavigator from './navigation/DrawerNavigator';
+
 
 const App = () => {
-  return <NavigationContainer>
-    <MainStackNavigator/>
-  </NavigationContainer>
+  return (
+    <NavigationContainer>
+      <DrawerNavigator />
+    </NavigationContainer>
+  )
 }
 

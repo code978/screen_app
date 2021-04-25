@@ -1,5 +1,5 @@
 
-// navigation/tabNavigator.js
+// ./navigation/tabNavigator.js
 
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -11,8 +11,10 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () =>{
     return(
         <Tab.Navigator>
-            <Tab.Screen name="" component={}/>
-            <Tab.Screen name="" component={}/>
+            <Tab.Screen name="homeScreen" component={MainStackNavigator}/>
+            <Tab.Screen name="contactScreen" component={ContactStackNavigator}/>
         </Tab.Navigator>
     );
 };
+
+export default BottomTabNavigator;
