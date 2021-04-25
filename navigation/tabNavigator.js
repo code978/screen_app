@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 import { MainStackNavigator, ContactStackNavigator } from './stackNavigator';
 import aboutScreen from '../screens/aboutScreen';
 
@@ -11,12 +11,17 @@ const Tab = createBottomTabNavigator();
 
 const BottomTabNavigator = ({navigation}) => {
     return (
-        <Tab.Navigator>
+        <Tab.Navigator 
+          tabBarOptions={{
+            activeTintColor: 'tomato',
+            inactiveTintColor: 'gray',
+          }}        
+        >
             <Tab.Screen 
-            
-            name="homeScreen" component={MainStackNavigator} />
-            <Tab.Screen name="aboutScreen" component={aboutScreen} />
-            <Tab.Screen name="contactScreen" component={ContactStackNavigator} />
+    
+            name="Home Screen" component={MainStackNavigator} />
+            <Tab.Screen name="About Screen" component={aboutScreen} />
+            <Tab.Screen name="Contact Screen" component={ContactStackNavigator} />
         </Tab.Navigator>
     );
 };
