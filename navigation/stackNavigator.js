@@ -27,12 +27,20 @@ const MainStackNavigator = () => {
     );
 };
 
-const ContactStackNavigator = () =>{
+const AboutScreenNavigator = () => {
     return(
         <Stack.Navigator screenOption={screenOptionStyle}>
-            <Stack.Screen name="contactScreen" component={contactScreen}/>
+            <Stack.Screen name="About Screen" component={aboutScreen}/>
         </Stack.Navigator>
     );
 };
 
-export { MainStackNavigator,ContactStackNavigator };
+const ContactStackNavigator = () => {
+    return (
+        <Stack.Navigator screenOption={screenOptionStyle}>
+            <Stack.Screen name="contactScreen" component={contactScreen} />
+        </Stack.Navigator>
+    );
+};
+
+export { MainStackNavigator, AboutScreenNavigator,ContactStackNavigator };

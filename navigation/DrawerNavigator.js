@@ -10,12 +10,13 @@ import TabNavigator from "./TabNavigator";
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name="homeScreen" component={TabNavigator} />
-      <Drawer.Screen name="contactScrreen" component={ContactStackNavigator} />
-    </Drawer.Navigator>
-  );
+    return (
+        <Drawer.Navigator>
+            <Drawer.Screen name="homeScreen" component={TabNavigator} />
+            <Drawer.Screen name="aboutScreen" component={TabNavigator} />
+            <Drawer.Screen name="contactScrreen" component={ContactStackNavigator} />
+        </Drawer.Navigator>
+    );
 };
 
 export default DrawerNavigator;
