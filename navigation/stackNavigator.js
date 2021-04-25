@@ -8,7 +8,7 @@ import homeScreen from '../screens/homeScreen';
 import aboutScreen from '../screens/aboutScreen';
 import contactScreen from '../screens/contactScreen';
 
-const stack = createStackNavigator();
+const Stack = createStackNavigator();
 
 const screenOptionStyle = {
     headerStyle: {
