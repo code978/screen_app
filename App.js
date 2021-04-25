@@ -11,6 +11,7 @@ const App = () => {
     <NavigationContainer>
       <DrawerNavigator />
     </NavigationContainer>
-  )
-}
+  );
+};
 
+export default App;
